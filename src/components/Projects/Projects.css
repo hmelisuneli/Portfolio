@@ -1,0 +1,94 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Создает три колонки */
+  gap: 30px; /* Увеличен отступ между карточками */
+  padding: 40px;
+  background: linear-gradient(135deg, #1e1e1e 0%, #282828 100%); /* Градиентный фон для контейнера */
+}
+
+.project-card {
+  background: linear-gradient(135deg, #333 0%, #444 100%); /* Градиентный фон для карточек */
+  color: #f5f5f5; /* Светлый текст */
+  padding: 25px;
+  border-radius: 20px; /* Более округленные углы */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Растягиваем содержимое по ширине */
+  transition: transform 0.4s, box-shadow 0.4s; /* Более плавные анимации */
+}
+
+.project-card:hover {
+  transform: translateY(-15px) scale(1.05); /* Карточка поднимается и увеличивается при наведении */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6); /* Увеличение тени при наведении */
+}
+
+.tech-tag {
+  background-color: #ff5733; /* Яркий оранжевый цвет тегов */
+  padding: 8px 15px;
+  border-radius: 12px;
+  margin: 10px 0;
+  color: #fff; /* Белый цвет текста */
+  font-weight: bold;
+  font-size: 0.9rem; /* Немного уменьшен размер шрифта */
+}
+
+.project-icons {
+  font-size: 36px; /* Увеличенный размер иконок */
+  margin-top: 25px;
+  color: #ff5733; /* Яркий оранжевый цвет иконок */
+  animation: icon-bounce 1s infinite alternate; /* Анимация для иконок */
+}
+
+@keyframes icon-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.project-image {
+  width: 100%;  
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 20px 20px 0 0; /* Более округленные верхние углы */
+}
+
+.project-content {
+  flex: 1; /* Распределяем оставшееся пространство для контента */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; /* Центрируем текст */
+}
+
+.project-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff5733; /* Яркий цвет заголовка */
+  text-transform: uppercase; /* Верхний регистр для заголовка */
+}
+
+.project-description {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc; /* Более светлый цвет для описания */
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+    padding: 20px;
+    gap: 20px;
+  }
+  .project-card {
+    padding: 20px; /* Уменьшена внутренняя отступка */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки на средних экранах */
+    padding: 30px;
+  }
+}

@@ -1,0 +1,64 @@
+body {
+    background-color: #121212; /* Изменение цвета фона страницы */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Изменение шрифта */
+    color: #FFFFFF; /* Изменение цвета текста */
+}
+
+.contacts-container {
+    background-color: #212121; /* Изменение цвета фона контейнера */
+    color: #BDBDBD; /* Изменение цвета текста */
+    padding: 60px; /* Увеличение отступов */
+    border-radius: 20px; /* Увеличение радиуса скругления углов */
+    max-width: 800px; /* Увеличение максимальной ширины */
+    margin: 50px auto; /* Увеличение отступов */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Изменение тени */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-container h1 {
+    color: #FF9800; /* Изменение цвета заголовка */
+    margin-bottom: 40px; /* Увеличение отступа снизу */
+    font-size: 36px; /* Изменение размера шрифта */
+    text-align: center; /* Центрирование текста */
+}
+
+.contacts-container p {
+    font-size: 18px; /* Изменение размера шрифта */
+    margin-bottom: 40px; /* Увеличение отступа снизу */
+    text-align: center; /* Центрирование текста */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 40px); /* Изменение ширины с учетом паддингов */
+    padding: 15px; /* Увеличение паддингов */
+    margin-top: 20px;
+    border: 2px solid #FFC107; /* Изменение цвета границы */
+    background-color: #424242; /* Изменение цвета фона */
+    color: #FFFFFF; /* Изменение цвета текста */
+    border-radius: 8px; /* Увеличение радиуса скругления углов */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FF9800; /* Изменение цвета фона кнопки */
+    border: none;
+    padding: 15px 30px; /* Увеличение паддингов */
+    border-radius: 8px; /* Увеличение радиуса скругления углов */
+    font-size: 20px; /* Изменение размера шрифта */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    margin-top: 30px; /* Увеличение отступа сверху */
+}
+
+button:hover {
+    background-color: #FFA726; /* Изменение цвета фона при наведении */
+    transform: scale(1.05); /* Изменение масштаба кнопки при наведении */
+}

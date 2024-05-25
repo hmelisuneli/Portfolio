@@ -1,0 +1,39 @@
+.footer {
+    background-color: #1E1E1E; /* Изменение цвета фона подвала */
+    color: #F0F0F0; /* Изменение цвета текста */
+    padding: 30px; /* Увеличение внутренних отступов */
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Увеличение отступа снизу */
+}
+
+.footer ul li {
+    margin: 0 20px; /* Увеличение отступов между элементами списка */
+}
+
+.footer ul li a {
+    color: #58D68D; /* Изменение цвета ссылок */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 18px; /* Увеличение размера шрифта ссылок */
+}
+
+.footer ul li a:hover {
+    color: #FFA726; /* Изменение цвета ссылок при наведении */
+}
+
+@media (max-width: 768px) {
+    .footer ul {
+        flex-direction: column;
+    }
+
+    .footer ul li {
+        margin: 10px 0; /* Увеличение отступа между элементами списка при маленьком экране */
+    }
+}

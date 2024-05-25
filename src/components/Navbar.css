@@ -1,0 +1,137 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1E2732; /* Темно-синий фон */
+    color: #FFD700; /* Яркий желтый текст */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 3px solid #ff9500; 
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar.open {
+    background-color: #1E2732; /* Темно-синий фон */
+}
+
+.navbar-logo {
+    color: #FFD700; /* Яркий желтый цвет */
+    font-weight: bold;
+    font-size: 36px; /* Большой размер шрифта */
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #FFD700;
+    padding: 15px 20px; /* Уменьшил отступы */
+    text-decoration: none;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.nav-links a.highlight {
+    background-color: #FF4500; /* Ярко-оранжевый фон */
+    color: #FFFFFF; /* Белый текст */
+}
+
+.nav-links a:not(.highlight):hover {
+    background-color: #FF4500;
+    color: #FFFFFF;
+}
+
+.theme-toggle-button {
+    padding: 12px 20px; /* Уменьшил отступы */
+    background: none;
+    border: 2px solid #FFD700; /* Яркая желтая рамка */
+    color: #FFD700;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, border-color 0.4s;
+}
+
+.theme-toggle-button:hover {
+    background-color: #FFD700;
+    color: #1E2732; /* Темно-синий текст */
+    border-color: #FF4500; /* Ярко-оранжевая рамка */
+}
+
+/* Бургер-меню */
+.burger-menu {
+    width: 30px; /* Уменьшил размер */
+    height: 30px; /* Уменьшил размер */
+    cursor: pointer;
+    display: none; /* Не видно на больших экранах */
+}
+
+.burger-menu .line1,
+.burger-menu .line2,
+.burger-menu .line3 {
+    width: 100%;
+    height: 3px; /* Уменьшил размер */
+    background-color: #FFD700; /* Яркий желтый цвет */
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar.open .line2 {
+    opacity: 0;
+}
+
+.navbar.open .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Уменьшил отступы */
+        height: auto;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px; /* Уменьшил отступ */
+    }
+
+    .nav-links {
+        display: none; /* Скрываем меню на маленьких экранах */
+        flex-direction: column; /* Устанавливаем столбцом */
+        align-items: flex-start;
+        width: 100%;
+        background-color: #1E2732; /* Темно-синий фон */
+        padding: 20px; /* Увеличиваем отступы */
+        border-top: 1px solid #FFD700; /* Добавляем разделительную линию */
+    }
+
+    .nav-links.open {
+        display: flex; /* Показываем меню при открытом состоянии */
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px 0; /* Увеличиваем отступы */
+    }
+
+    .theme-toggle-button {
+        margin-top: 20px;
+        margin-left: auto;
+        padding: 10px 20px; /* Увеличиваем отступы */
+    }
+
+    .burger-menu {
+        display: block; /* Показываем бургер-меню на маленьких экранах */
+    }
+}

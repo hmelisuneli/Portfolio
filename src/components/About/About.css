@@ -1,0 +1,42 @@
+/* About.css */
+.about-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.experience {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.experience h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.experience h3 {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.experience p {
+  color: #777;
+}

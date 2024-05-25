@@ -1,0 +1,55 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.home-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.home-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.home-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.button {
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #16A085;
+}
+
+.home-photo img {
+    max-width: 35%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}

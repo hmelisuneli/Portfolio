@@ -1,0 +1,52 @@
+header {
+    background-color: #1E1E1E; /* Изменение цвета фона заголовка */
+    color: #FFFFFF; /* Изменение цвета текста */
+    padding: 30px 50px; /* Увеличение внутренних отступов */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Изменение тени */
+}
+
+header h1 {
+    margin: 0; /* Убрать отступ снизу заголовка */
+    font-size: 36px; /* Увеличение размера шрифта */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Увеличение отступа сверху */
+}
+
+nav ul li {
+    margin: 0 20px; /* Увеличение отступов между элементами списка */
+}
+
+nav ul li a {
+    color: #58D68D; /* Изменение цвета ссылок */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Увеличение размера шрифта */
+}
+
+nav ul li a:hover {
+    color: #FFA726; /* Изменение цвета ссылок при наведении */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px; /* Возврат к исходным внутренним отступам при маленьком экране */
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px; /* Увеличение отступа сверху при маленьком экране */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Увеличение отступов между элементами списка при маленьком экране */
+    }
+}

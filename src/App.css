@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/* Глобальные стили */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive; /* Оригинальный шрифт */
+  background-color: #07070d; /* Темно-фиолетовый фон */
+  color: #ffd700; /* Ярко-желтый текст */
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-family: 'Comic Sans MS', cursive; /* Оригинальный шрифт заголовков */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background-color: #1d4ed369; /* Темно-синий фон навбара */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Тень с увеличенной интенсивностью */
+  padding: 20px 40px; /* Увеличены внутренние отступы */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-links a {
+  color: #ff5252; /* Ярко-красный цвет ссылок */
+  padding: 15px; /* Увеличены внутренние отступы */
+  transition: color 0.4s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links a:hover {
+  color: #ffc107; /* Ярко-желтый цвет ссылок при наведении */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section {
+  padding: 100px 40px; /* Увеличены внутренние отступы */
+  margin-top: 100px; /* Увеличен отступ сверху */
+}
+
+.project-card {
+  background-color: #3f51b5; /* Темно-синий цвет карточки проекта */
+  border-radius: 30px; /* Увеличен радиус скругления углов */
+  padding: 40px; /* Увеличены внутренние отступы */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6); /* Увеличена тень */
+  transition: transform 0.6s ease-in-out; /* Увеличено время анимации */
+}
+
+.project-card:hover {
+  transform: scale(1.08); /* Изменен эффект при наведении */
+}
+
+/* Стилизация кнопок технологий */
+.tech-tag {
+  background-color: #ff5722; /* Ярко-оранжевый цвет кнопок технологий */
+  color: #fff; /* Белый текст */
+  border-radius: 20px; /* Увеличен радиус скругления углов */
+  padding: 10px 20px; /* Увеличены внутренние отступы */
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold; /* Добавлено жирное начертание */
+}
+
+/* Переключение темы */
+body.light {
+  background-color: #fafafa; /* Светло-серый цвет фона для светлой темы */
+  color: #333; /* Темный серый цвет текста для светлой темы */
+}
+
+body.dark {
+  background-color: #181818; /* Темно-серый цвет фона для темной темы */
+  color: #eee; /* Белый цвет текста для темной темы */
 }
